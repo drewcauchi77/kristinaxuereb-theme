@@ -1,0 +1,65 @@
+$breakpointSmall: 576px;
+$breakpointMedium: 768px;
+$breakpointLarge: 992px;
+$breakpointXLarge: 1200px;
+$breakpointXXLarge: 1400px;
+
+$white: #FFFFFF;
+$black: #1B1B1B;
+$grey: #5A5A5A;
+
+body{
+    margin: 0px;
+}
+
+.container{
+    margin: 10px;
+}
+
+.content-container{
+    max-width: 1560px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, a, span{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    color: $black;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+@media only screen and (min-width: $breakpointMedium){
+    .container{
+        margin: 25px;
+    }
+}
+
+@media only screen and (min-width: $breakpointLarge){
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+}

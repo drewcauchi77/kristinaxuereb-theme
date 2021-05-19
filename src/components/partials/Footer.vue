@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <footer class="content-container" v-if="this.$route.name != 'Home'">
         <h1>Footer</h1>
-    </div>
+    </footer>
 </template>
 
 <script>
