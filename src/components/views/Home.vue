@@ -54,7 +54,7 @@ export default {
     },
     methods: {
         async fetchHomeContent(){
-            const response = await axios.get('http://kristina.ax/wp-json/wp/v2/pages?slug=home')
+            const response = await axios.get('/wp-json/wp/v2/pages?slug=home')
 
             this.allHomeContent = response.data[0]
             this.loading = false

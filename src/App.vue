@@ -4,11 +4,11 @@
             <div class="content">
                 <Header />
                 <router-view></router-view>
-                <Footer />
             </div>
         </div>
+        <Footer />
 
-        <div class="background-particles" v-show="this.$route.name == 'Home'">
+        <div class="background-particles" v-if="this.$route.name == 'Home'">
             <vue-particles color="#1B1B1B" linesColor="#5A5A5A"></vue-particles>
         </div>
     </main>

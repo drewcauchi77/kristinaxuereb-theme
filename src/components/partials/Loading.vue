@@ -55,6 +55,7 @@ export default {
                 color: #1B1B1B;
                 text-align: center;
                 font-size: 20px;
+                font-weight: 600;
             }
             .lds-circle{
                 display: inline-block;
