@@ -40,8 +40,34 @@ export default {
     name: 'Header',
     data() {
         return {
-            toggleMobileMenu: false
+            toggleMobileMenu: false,
+            isMobile: false
         }
+    },
+    watch: {
+        toggleMobileMenu: function() {
+            if(this.toggleMobileMenu && this.isMobile){
+                document.documentElement.style.overflowY = 'hidden'
+                return
+            }
+            document.documentElement.style.overflowY = 'auto'
+        }
+    },
+    methods: {
+        getWindowWidth() {
+            if(window.innerWidth < 768){
+                this.isMobile = true
+                return
+            }
+            this.isMobile = false
+        }
+    },
+    mounted() {
+        window.addEventListener('resize', this.getWindowWidth)
+        window.addEventListener('load', this.getWindowWidth)
+    },
+    created() {
+        this.getWindowWidth()
     }
 }
 </script>
@@ -152,6 +178,7 @@ export default {
                         }
                         .router-link-exact-active{
                             color: #1B1B1B;
+                            font-weight: 800;
                         }
                     }
                 }
