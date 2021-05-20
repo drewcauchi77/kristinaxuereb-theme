@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 
 import Home from '../components/views/Home'
 import About from '../components/views/About'
-import Projects from '../components/views/Projects'
+import Portfolio from '../components/views/Portfolio'
+import SinglePost from '../components/views/SinglePost'
 import Contact from '../components/views/Contact'
 import NotFound from '../components/views/NotFound'
 
@@ -22,8 +23,13 @@ const routes = [
   },
   {
     path: '/projects',
-    name: 'Projects',
-    component: Projects
+    name: 'Portfolio',
+    component: Portfolio
+  },
+  {
+    path: '/projects/:slug',
+    name: 'SinglePost',
+    component: SinglePost
   },
   {
     path: '/contact',
