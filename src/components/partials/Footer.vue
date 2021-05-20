@@ -1,7 +1,7 @@
 <template>
     <footer v-if="this.$route.name != 'Home'" class="footer-container padding-sect">
         <div class="content-container">
-            <img src="wp-content/themes/zuus-vuejs-wp-theme-boilerplate/dist/assets/footer-site-logo.png">
+            <img src="/wp-content/themes/zuus-vuejs-wp-theme-boilerplate/dist/assets/footer-site-logo.png">
 
             <nav>
                 <ul class="navigation-list">

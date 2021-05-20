@@ -7,7 +7,7 @@
         </div>
 
         <div class="social-item">
-            <a href="https://github.com/drewcauchi77" target="_blank">
+            <a href="https://github.com/kristinaxuereb" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
         </div>
@@ -42,6 +42,7 @@ export default {
         .social-item{
             border-radius: 50%;
             background-color: #1B1B1B;
+            border: 2px solid #1B1B1B;
             z-index: 3;
             transition: 0.5s all;
             a{
@@ -61,8 +62,12 @@ export default {
                 }
             }
             &:hover{
-                transform: scale(1.2);
-                background-color: #000000;
+                background-color: transparent;
+                a{
+                    svg{
+                        color: #1B1B1B;
+                    }
+                }
             }
         }
     }
