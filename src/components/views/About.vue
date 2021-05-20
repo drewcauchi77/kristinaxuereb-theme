@@ -1,6 +1,6 @@
 <template>
     <div class="content-container">
-        <div class="page-content" v-if="!loading">
+        <div class="page-content padding-sect" v-if="!loading">
             <h1>{{ allAboutContent.acf.title }}</h1>
             <div class="image-sect">
                 <img :src="allAboutContent.acf.image.url" :alt="allAboutContent.acf.image.alt">
@@ -46,7 +46,6 @@ export default {
     .content-container{
         max-width: 1360px;
         .page-content{
-            padding: 40px 0px;
             h1{
                 text-align: center;
                 margin-bottom: 40px;
@@ -85,7 +84,6 @@ export default {
                 grid-template-columns: 2fr 1fr;
                 grid-column-gap: 40px;
                 grid-row-gap: 20px;
-                padding: 90px 0px;
                 h1{
                     margin: 0px;
                     text-align: left;

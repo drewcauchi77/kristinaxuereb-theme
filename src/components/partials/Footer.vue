@@ -1,5 +1,5 @@
 <template>
-    <footer v-if="this.$route.name != 'Home'" class="footer-container">
+    <footer v-if="this.$route.name != 'Home'" class="footer-container padding-sect">
         <div class="content-container">
             <img src="wp-content/themes/zuus-vuejs-wp-theme-boilerplate/dist/assets/footer-site-logo.png">
 
@@ -47,7 +47,6 @@ export default {
 
 <style lang="scss" scoped>
     .footer-container{
-        padding: 40px 0px;
         background-color: rgba(153, 184, 205, 0.4);
         .content-container{
             img{
@@ -117,7 +116,6 @@ export default {
 
     @media only screen and (min-width: 768px){
         .footer-container{
-            padding: 90px 0px;
             .content-container{
                 img{
                     height: 90px;
