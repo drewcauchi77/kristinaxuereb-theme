@@ -22,7 +22,7 @@
                     </li>
 
                     <li class="nav-list-item">
-                        <a href="#" target="_blank">CV</a>
+                        <a href="/wp-content/themes/zuus-vuejs-wp-theme-boilerplate/dist/assets/resume.pdf" target="_blank">CV</a>
                     </li>
                 </ul>
             </nav>
