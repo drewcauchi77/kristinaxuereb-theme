@@ -119,6 +119,38 @@ ul, li{
     }
 }
 
+.post-content{
+    figure{
+        margin: 0px;
+        padding-bottom: 20px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    p{
+        padding-bottom: 20px;
+    }
+    ul{
+        padding-bottom: 20px;
+        li{
+            list-style-type: circle;
+            list-style-position: inside;
+            padding-bottom: 10px;
+        }
+    }
+    blockquote{
+        border-left: 3px solid rgba(153, 184, 205, 0.4);
+        margin: 0px;
+        margin-bottom: 20px;
+        p{
+            padding: 10px;
+            font-size: 19px;
+            font-style: italic;
+        }
+    }
+}
+
 @media only screen and (min-width: $breakpointMedium){
     .container{
         margin: 25px;
@@ -149,6 +181,26 @@ ul, li{
         a{
             span{
                 font-size: 21px;
+            }
+        }
+    }
+
+    .post-content{
+        p{
+            padding-bottom: 30px;
+        }
+        ul{
+            padding-bottom: 30px;
+            li{
+                padding-bottom: 15px;
+                font-size: 21px;
+            }
+        }
+        blockquote{
+            margin-bottom: 30px;
+            p{
+                padding: 20px;
+                font-size: 24px;
             }
         }
     }
