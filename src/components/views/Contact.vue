@@ -7,7 +7,7 @@
                 <div class="cv-sect sect">
                     <h2>CV</h2>
                     <div class="button">
-                        <a href="#" target="_blank">
+                        <a href="/wp-content/themes/zuus-vuejs-wp-theme-boilerplate/dist/assets/resume.pdf" target="_blank">
                             <span>View CV</span>
                         </a>
                     </div>

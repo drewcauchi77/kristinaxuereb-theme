@@ -52,4 +52,14 @@ export default {
             }
         }
     }
+
+    @media only screen and (min-width: 992px){
+        .content-container{
+            .page-content{
+                h2{
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
 </style>

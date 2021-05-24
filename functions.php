@@ -13,3 +13,17 @@ function load_vue_scripts() {
     wp_enqueue_script('/dist/scripts/app.js', get_template_directory_uri() . '/dist/scripts/app.js', null, null, true);
 }
 add_action('wp_enqueue_scripts', 'load_vue_scripts', 100);
+
+add_action('rest_api_init', function() {
+    register_rest_field(
+        array('post'),
+        'formatted_date',
+        array(
+            'get_callback'    => function() {
+                return get_the_date('d-m-y');
+            },
+            'update_callback' => null,
+            'schema'          => null,
+        )
+    );
+});

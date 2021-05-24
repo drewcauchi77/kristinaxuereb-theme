@@ -23,7 +23,7 @@
                     </li>
 
                     <li class="nav-list-item" @click="toggleMobileMenu = !toggleMobileMenu">
-                        <a href="#" target="_blank">CV</a>
+                        <a href="/wp-content/themes/zuus-vuejs-wp-theme-boilerplate/dist/assets/resume.pdf" target="_blank">CV</a>
                     </li>
 
                     <li class="nav-list-item" @click="toggleMobileMenu = !toggleMobileMenu">

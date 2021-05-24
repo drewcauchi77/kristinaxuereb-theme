@@ -112,6 +112,13 @@ ul, li{
     }
 }
 
+.excerpt{
+    p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
 @media only screen and (min-width: $breakpointMedium){
     .container{
         margin: 25px;
