@@ -1,7 +1,7 @@
 <template>
 
     <div class="projects-container" v-if="!loading">
-        <div class="categories-list">
+        <div class="categories-list" v-if="allCategories">
             <div class="single-category" @click="fetchProjects(); selectedCategory = 0" :class="{ active: selectedCategory == 0 }">
                 <span>All</span>
             </div>
@@ -16,7 +16,11 @@
             </div>
         </div>
 
-        <div class="projects-list">
+        <div class="categories-list" v-else>
+            <h2>No Categories present at the moment!</h2>
+        </div>
+
+        <div class="projects-list" v-if="allProjects">
             <div class="single-project" v-for="project in allProjects" :key="project.id">
                 <router-link :to="'/projects/' + project.slug">
                     <div class="single-info">
@@ -38,6 +42,10 @@
                     </div>
                 </router-link>
             </div>
+        </div>
+
+        <div class="projects-list" v-else>
+            <h2>No Projects available at the moment!</h2>
         </div>
     </div>
 
