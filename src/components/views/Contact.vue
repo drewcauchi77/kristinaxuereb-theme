@@ -22,6 +22,7 @@
             <div class="form-section">
                 <h2>{{ allContactContent.acf.tagline }}</h2>
                 <div class="form-desc custom-desc" v-html="allContactContent.acf.content"></div>
+                <Form />
             </div>
         </div>
 
@@ -33,12 +34,14 @@
 import axios from 'axios'
 import Loading from '../partials/Loading'
 import Socials from '../partials/Socials'
+import Form from '../partials/Form'
 
 export default {
     name: 'Contact',
     components: {
         Loading,
-        Socials
+        Socials,
+        Form
     },
     data() {
         return {

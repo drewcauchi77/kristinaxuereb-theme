@@ -75,7 +75,11 @@ export default {
         async fetchCategories() {
             const response = await axios.get('/wp-json/wp/v2/categories')
 
-            this.allCategories = response.data
+            for(var i = 0; i < response.data.length; i++){
+                if(response.data[i].count > 0){
+                    this.allCategories.push(response.data[i])
+                }
+            }
         },
         async getProjectsUnderCategory(categoryID) {
             const response = await axios.get('/wp-json/wp/v2/posts?categories=' + categoryID)

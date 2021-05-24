@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "emailjs-com": "^2.6.4",
     "vue": "^2.6.11",
     "vue-particles": "^1.0.9"
   }
