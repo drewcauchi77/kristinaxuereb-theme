@@ -171,14 +171,14 @@ export default {
                         a{
                             color: #5A5A5A;
                             font-size: 25px;
-                            font-weight: 600;
+                            font-weight: 500;
                             &:hover{
                                 color: #1B1B1B; 
                             }
                         }
                         .router-link-exact-active{
                             color: #1B1B1B;
-                            font-weight: 800;
+                            font-weight: 700;
                         }
                     }
                 }

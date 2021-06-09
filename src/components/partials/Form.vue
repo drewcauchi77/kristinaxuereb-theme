@@ -98,7 +98,7 @@ export default {
                 border: none;
                 background-color: #F4F4F4;
                 border-radius: 4px;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Tajawal', sans-serif;
                 color: #1B1B1B;
                 font-size: 15px;
                 outline: none;
@@ -116,7 +116,7 @@ export default {
                 outline: none;
                 border-radius: 4px;
                 color: #FFFFFF;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Tajawal', sans-serif;
                 font-size: 15px;
                 cursor: pointer;
                 border: 1px solid #1B1B1B;

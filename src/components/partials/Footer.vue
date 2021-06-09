@@ -74,7 +74,7 @@ export default {
                             }
                         }
                         .router-link-exact-active{
-                            font-weight: 800;
+                            font-weight: 700;
                         }
                     }
                 }
