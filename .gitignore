@@ -1,4 +1,7 @@
-node_modules
-dist
-dist/
-package-lock.json
+.htaccess
+wp-config.php
+wp-content/uploads
+wp-content/ai1wm-backups
+wp-content/aiowps_backups
+wp-content/backups-dup-pro
+wp-content/languages
